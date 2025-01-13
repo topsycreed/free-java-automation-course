@@ -7,7 +7,7 @@ body, html {
   justify-content: center;
   align-items: center;
   background-color: #f4f4f4;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
 
 .container {
@@ -75,26 +75,12 @@ footer {
   text-align: center;
 }
 
-.what-you-need {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 2px;
-  margin: 2px 0;
-}
-
 .what-you-need p {
   background: #007BFF;
   color: #fff;
   padding: 5px;
   border-radius: 4px;
   text-align: center;
-}
-
-.outcome {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 2px;
-  margin: 2px 0;
 }
 
 .outcome p {
@@ -124,6 +110,15 @@ footer {
 .instructor-info {
   flex: 1;
   text-align: left;
+}
+
+.instructor-info-below {
+  text-align: center;
+  white-space: normal; /* Убирает ограничения по переносу текста */
+  overflow: hidden; /* Прячет текст, выходящий за пределы, если нужно */
+  text-overflow: ellipsis; /* Добавляет троеточие, если текст слишком длинный */
+  margin: 2px 0; /* Отступы сверху и снизу */
+  word-wrap: break-word; /* Разрешает разрывать длинные слова */
 }
 
 /* Стили для кнопки регистрации */
