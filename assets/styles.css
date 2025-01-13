@@ -6,8 +6,8 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   background-color: #f4f4f4;
+  padding-bottom: 20px;
 }
 
 .container {
@@ -34,6 +34,16 @@ footer {
   color: #777;
 }
 
+.course-title {
+  text-align: center;
+  font-size: 2rem; /* Можно увеличить размер шрифта для лучшего восприятия */
+  white-space: normal; /* Убирает ограничения по переносу текста */
+  overflow: hidden; /* Прячет текст, выходящий за пределы, если нужно */
+  text-overflow: ellipsis; /* Добавляет троеточие, если текст слишком длинный */
+  margin: 20px 0; /* Отступы сверху и снизу */
+  word-wrap: break-word; /* Разрешает разрывать длинные слова */
+}
+
 /* Программа курса */
 .course-program {
   display: grid;
@@ -43,6 +53,51 @@ footer {
 }
 
 .course-program div {
+  background: #007BFF;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.how-it-works {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.how-it-works h3 {
+  background: #007BFF;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.what-you-need {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.what-you-need p {
+  background: #007BFF;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.outcome {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.outcome p {
   background: #007BFF;
   color: #fff;
   padding: 10px;
@@ -71,25 +126,28 @@ footer {
   text-align: left;
 }
 
-/* Полезные ссылки */
-.links-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  margin: 20px 0;
+/* Стили для кнопки регистрации */
+.registration {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
 }
 
-.links-container a {
-  text-decoration: none;
-  color: #007BFF;
-  font-weight: bold;
-  background: #e9f5ff;
-  padding: 10px;
-  border-radius: 4px;
-  text-align: center;
-  display: block;
+.registration-button {
+    color: white;
+    background-color: #4CAF50;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s;
 }
 
-.links-container a:hover {
-  background: #d4ebff;
+.registration-button:hover {
+    background-color: #45a049;
 }
