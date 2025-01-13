@@ -7,7 +7,7 @@ body, html {
   justify-content: center;
   align-items: center;
   background-color: #f4f4f4;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 .container {
@@ -77,30 +77,30 @@ footer {
 
 .what-you-need {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  margin: 20px 0;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2px;
+  margin: 2px 0;
 }
 
 .what-you-need p {
   background: #007BFF;
   color: #fff;
-  padding: 10px;
+  padding: 5px;
   border-radius: 4px;
   text-align: center;
 }
 
 .outcome {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  margin: 20px 0;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2px;
+  margin: 2px 0;
 }
 
 .outcome p {
   background: #007BFF;
   color: #fff;
-  padding: 10px;
+  padding: 5px;
   border-radius: 4px;
   text-align: center;
 }
