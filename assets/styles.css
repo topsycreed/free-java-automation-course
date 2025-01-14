@@ -1,148 +1,49 @@
-/* Общие стили */
 body, html {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f4f4f4;
-  padding-bottom: 40px;
+  height: 100%;
+  min-height: 80vh;
 }
 
-.container {
-  max-width: 800px;
-  width: 100%;
-  text-align: center;
-  background: #fff;
-  padding: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+body {
+  --bs-body-bg: #f4f4f4;
+}
+
+div {
   border-radius: 8px;
 }
 
-h1, h2 {
-  margin: 10px 0;
+body > .container {
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  --bs-gutter-x: 30px !important;
 }
 
-header {
-  margin-bottom: 20px;
+.row {  
+  --bs-gutter-x: 30px !important;
 }
 
-footer {
-  margin-top: 20px;
-  font-size: 0.9em;
-  color: #777;
-}
-
-.course-title {
-  text-align: center;
-  font-size: 2rem; /* Можно увеличить размер шрифта для лучшего восприятия */
-  white-space: normal; /* Убирает ограничения по переносу текста */
-  overflow: hidden; /* Прячет текст, выходящий за пределы, если нужно */
-  text-overflow: ellipsis; /* Добавляет троеточие, если текст слишком длинный */
-  margin: 20px 0; /* Отступы сверху и снизу */
-  word-wrap: break-word; /* Разрешает разрывать длинные слова */
-}
-
-/* Программа курса */
-.course-program {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  margin: 20px 0;
-}
-
-.course-program div {
-  background: #007BFF;
-  color: #fff;
-  padding: 10px;
-  border-radius: 4px;
+.item {
+  background-color: var(--bs-primary);
+  color: var(--bs-white);
+  height: 100%;
   text-align: center;
 }
 
-.how-it-works {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  margin: 20px 0;
-}
-
-.how-it-works h3 {
-  background: #007BFF;
-  color: #fff;
-  padding: 10px;
-  border-radius: 4px;
-  text-align: center;
-}
-
-.what-you-need p {
-  background: #007BFF;
-  color: #fff;
-  padding: 5px;
-  border-radius: 4px;
-  text-align: center;
-}
-
-.outcome p {
-  background: #007BFF;
-  color: #fff;
-  padding: 5px;
-  border-radius: 4px;
-  text-align: center;
-}
-
-/* О преподавателе */
-.instructor-container {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  margin: 20px 0;
-}
-
-.instructor-photo {
+.instructor .photo {
+  display: inline-block;
   max-width: 150px;
-  height: 150px; /* Устанавливаем фиксированную высоту для круговой формы */
-  border-radius: 50%; /* Делаем изображение круглым */
-  object-fit: cover; /* Центрируем содержимое, если пропорции изображения отличаются */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Тень для красоты */
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.instructor-info {
-  flex: 1;
-  text-align: left;
-}
-
-.instructor-info-below {
-  text-align: center;
-  white-space: normal; /* Убирает ограничения по переносу текста */
-  overflow: hidden; /* Прячет текст, выходящий за пределы, если нужно */
-  text-overflow: ellipsis; /* Добавляет троеточие, если текст слишком длинный */
-  margin: 2px 0; /* Отступы сверху и снизу */
-  word-wrap: break-word; /* Разрешает разрывать длинные слова */
-}
-
-/* Стили для кнопки регистрации */
 .registration {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #333;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.registration-button {
-    color: white;
-    background-color: #4CAF50;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    display: inline-block;
-    transition: background-color 0.3s;
-}
-
-.registration-button:hover {
-    background-color: #45a049;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #333;
+  text-align: center;
+  border-radius: 0px;
 }
